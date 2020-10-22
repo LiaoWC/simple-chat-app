@@ -78,7 +78,8 @@ html(lang='en')
                     }
                 });
             }
-            const socket = io.connect("localhost:"+#{portNum});
+            // const socket = io.connect("localhost:"+#{portNum});
+            const socket = io.connect();
             socket.on("update-user-list", ({users}) => {
                 updateUserList(users);
             });
