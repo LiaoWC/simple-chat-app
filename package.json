@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "npm install &&  ts-node ./src/index.ts",
     "dev": "nodemon --watch './src/**/*.ts' --exec 'ts-node' ./src/index.ts"
   },
   "devDependencies": {
